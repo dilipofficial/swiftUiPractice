@@ -11,6 +11,7 @@
 		898749622C67BF60002F7B54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898749612C67BF60002F7B54 /* ContentView.swift */; };
 		898749642C67BF65002F7B54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 898749632C67BF65002F7B54 /* Assets.xcassets */; };
 		898749672C67BF65002F7B54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 898749662C67BF65002F7B54 /* Preview Assets.xcassets */; };
+		89A02BE82C6E8673001F9FF3 /* WheatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A02BE72C6E8673001F9FF3 /* WheatherButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		898749612C67BF60002F7B54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		898749632C67BF65002F7B54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		898749662C67BF65002F7B54 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		89A02BE72C6E8673001F9FF3 /* WheatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				898749612C67BF60002F7B54 /* ContentView.swift */,
 				898749632C67BF65002F7B54 /* Assets.xcassets */,
 				898749652C67BF65002F7B54 /* Preview Content */,
+				89A02BE72C6E8673001F9FF3 /* WheatherButton.swift */,
 			);
 			path = swiftUiPractice;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89A02BE82C6E8673001F9FF3 /* WheatherButton.swift in Sources */,
 				898749622C67BF60002F7B54 /* ContentView.swift in Sources */,
 				898749602C67BF60002F7B54 /* swiftUiPracticeApp.swift in Sources */,
 			);
