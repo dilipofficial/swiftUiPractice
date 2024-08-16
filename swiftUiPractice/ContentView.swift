@@ -14,8 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack{
-            BackgroundView(topColor: isNight ? .black :  .blue,
-                           bottomColor: isNight ? .gray : Color("lightBlue"))
+            BackgroundView(isNight: isNight)
             
             VStack{
                 
@@ -85,6 +84,7 @@ struct WheatherDayView: View {
             
             Image(systemName: imageName)
                 .resizable()
+                .symbolRenderingMode(.multicolor)
                 .renderingMode(.original)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height: 40)
@@ -98,12 +98,18 @@ struct WheatherDayView: View {
 
 struct BackgroundView: View {
     
-    var topColor: Color
-    var bottomColor: Color
+   var isNight: Bool
     
     var body: some View {
-        LinearGradient(gradient: Gradient(colors: [topColor, bottomColor]), startPoint: .topLeading, endPoint: .bottomTrailing)
-            .edgesIgnoringSafeArea(.all)
+//        LinearGradient(gradient: Gradient(colors: [isNight ? .black : .blue,
+//                                                   isNight ? .gray : Color("lightBlue")]),
+//                       startPoint: .topLeading,
+//                       endPoint: .bottomTrailing)
+//            .ignoresSafeArea()
+        
+        ContainerRelativeShape()
+        .fill(isNight ? Color.black.gradient : Color.blue.gradient)
+        .ignoresSafeArea()
     }
 }
 
